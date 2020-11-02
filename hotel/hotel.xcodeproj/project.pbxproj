@@ -7,24 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F81E24882550BDD300697F33 /* parking.png in Resources */ = {isa = PBXBuildFile; fileRef = F81E24822550BDD300697F33 /* parking.png */; };
+		F81E24892550BDD300697F33 /* platnosc.png in Resources */ = {isa = PBXBuildFile; fileRef = F81E24832550BDD300697F33 /* platnosc.png */; };
+		F81E248A2550BDD300697F33 /* kartoteka.png in Resources */ = {isa = PBXBuildFile; fileRef = F81E24842550BDD300697F33 /* kartoteka.png */; };
+		F81E248B2550BDD300697F33 /* checkout.png in Resources */ = {isa = PBXBuildFile; fileRef = F81E24852550BDD300697F33 /* checkout.png */; };
+		F81E248C2550BDD300697F33 /* checkin.png in Resources */ = {isa = PBXBuildFile; fileRef = F81E24862550BDD300697F33 /* checkin.png */; };
+		F81E248D2550BDD300697F33 /* status.png in Resources */ = {isa = PBXBuildFile; fileRef = F81E24872550BDD300697F33 /* status.png */; };
 		F8B88EB3255069B900D3A178 /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = F8B88EB2255069B900D3A178 /* ResourcePath.mm */; };
 		F8B88EB6255069B900D3A178 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8B88EB5255069B900D3A178 /* main.cpp */; };
-		F8B88EB9255069B900D3A178 /* cute_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F8B88EB8255069B900D3A178 /* cute_image.jpg */; };
-		F8B88EBB255069B900D3A178 /* nice_music.ogg in Resources */ = {isa = PBXBuildFile; fileRef = F8B88EBA255069B900D3A178 /* nice_music.ogg */; };
-		F8B88EBD255069B900D3A178 /* sansation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8B88EBC255069B900D3A178 /* sansation.ttf */; };
-		F8B88EBF255069B900D3A178 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B88EBE255069B900D3A178 /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F81E24822550BDD300697F33 /* parking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = parking.png; path = hotel/logo/parking.png; sourceTree = SOURCE_ROOT; };
+		F81E24832550BDD300697F33 /* platnosc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = platnosc.png; path = hotel/logo/platnosc.png; sourceTree = SOURCE_ROOT; };
+		F81E24842550BDD300697F33 /* kartoteka.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kartoteka.png; path = hotel/logo/kartoteka.png; sourceTree = SOURCE_ROOT; };
+		F81E24852550BDD300697F33 /* checkout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = checkout.png; path = hotel/logo/checkout.png; sourceTree = SOURCE_ROOT; };
+		F81E24862550BDD300697F33 /* checkin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = checkin.png; path = hotel/logo/checkin.png; sourceTree = SOURCE_ROOT; };
+		F81E24872550BDD300697F33 /* status.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = status.png; path = hotel/logo/status.png; sourceTree = SOURCE_ROOT; };
 		F8B88EAD255069B900D3A178 /* hotel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hotel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8B88EB1255069B900D3A178 /* hotel-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "hotel-Info.plist"; path = "../hotel-Info.plist"; sourceTree = "<group>"; };
 		F8B88EB2255069B900D3A178 /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
 		F8B88EB4255069B900D3A178 /* ResourcePath.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ResourcePath.hpp; sourceTree = "<group>"; };
 		F8B88EB5255069B900D3A178 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		F8B88EB8255069B900D3A178 /* cute_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cute_image.jpg; path = ../cute_image.jpg; sourceTree = "<group>"; };
-		F8B88EBA255069B900D3A178 /* nice_music.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; name = nice_music.ogg; path = ../nice_music.ogg; sourceTree = "<group>"; };
-		F8B88EBC255069B900D3A178 /* sansation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = sansation.ttf; path = ../sansation.ttf; sourceTree = "<group>"; };
-		F8B88EBE255069B900D3A178 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,10 +81,12 @@
 		F8B88EB7255069B900D3A178 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				F8B88EB8255069B900D3A178 /* cute_image.jpg */,
-				F8B88EBA255069B900D3A178 /* nice_music.ogg */,
-				F8B88EBC255069B900D3A178 /* sansation.ttf */,
-				F8B88EBE255069B900D3A178 /* icon.png */,
+				F81E24862550BDD300697F33 /* checkin.png */,
+				F81E24852550BDD300697F33 /* checkout.png */,
+				F81E24842550BDD300697F33 /* kartoteka.png */,
+				F81E24822550BDD300697F33 /* parking.png */,
+				F81E24832550BDD300697F33 /* platnosc.png */,
+				F81E24872550BDD300697F33 /* status.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -143,10 +149,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8B88EBF255069B900D3A178 /* icon.png in Resources */,
-				F8B88EBD255069B900D3A178 /* sansation.ttf in Resources */,
-				F8B88EBB255069B900D3A178 /* nice_music.ogg in Resources */,
-				F8B88EB9255069B900D3A178 /* cute_image.jpg in Resources */,
+				F81E24882550BDD300697F33 /* parking.png in Resources */,
+				F81E248B2550BDD300697F33 /* checkout.png in Resources */,
+				F81E248C2550BDD300697F33 /* checkin.png in Resources */,
+				F81E24892550BDD300697F33 /* platnosc.png in Resources */,
+				F81E248A2550BDD300697F33 /* kartoteka.png in Resources */,
+				F81E248D2550BDD300697F33 /* status.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
