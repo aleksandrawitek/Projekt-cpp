@@ -47,7 +47,7 @@ Zrobione:
 - zainstalowanie oraz zapoznanie się z SQLite (https://www.youtube.com/watch?v=SkXxnasbrFY)
 - zapoznanie się z komendami, możliwościami SQLite (https://www.w3schools.com/sql/)
 - utworzone 3 bazy danych: pokoje, goście oraz rezerwacja
-
+- stworzenie ikon oraz elementów graficznych programu (folder - logo)
 
 
 
