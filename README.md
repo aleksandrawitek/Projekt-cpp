@@ -48,6 +48,12 @@ Zrobione:
 - zapoznanie się z komendami, możliwościami SQLite (https://www.w3schools.com/sql/)
 - utworzone 3 bazy danych: pokoje, goście oraz rezerwacja
 - stworzenie ikon oraz elementów graficznych programu (folder - logo)
+- stworzenie strony startowej wraz z ikonami (plik strona startowa - zrzut ekranu z pokazanym wyglądem)
+
+Do zrobienia:
+
+- dodanie eventów onclick
+- połączenie baz danych z przyciskami
 
 
 
