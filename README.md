@@ -41,10 +41,13 @@ Używane technologie (modyfikacja - dodane):
 
 Zrobione:
 
-- zainstalowanie framworków SFML (https://www.youtube.com/watch?v=H7g20Xit8lI)
+- zainstalowanie framweorków SFML (https://www.youtube.com/watch?v=H7g20Xit8lI)
 - zapoznanie się z funkcjonalnością oraz możliwościami biblioteki SFML
 - utworzenie projektu w XCode
 - zainstalowanie oraz zapoznanie się z SQLite (https://www.youtube.com/watch?v=SkXxnasbrFY)
+- zapoznanie się z komendami, możliwościami SQLite (https://www.w3schools.com/sql/)
+- utworzone 3 bazy danych: pokoje, goście oraz rezerwacja
+
 
 
 
