@@ -74,6 +74,7 @@ Zrobione:
 
 - https://www.tutorialspoint.com/sqlite/sqlite_c_cpp.htm tutorial
 - skonfigurowanie XCode pod sqlite3
+- optymalizacja kodu - zmniejszenie ilości wierszy
 
 
 
