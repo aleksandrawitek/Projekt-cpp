@@ -7,23 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F81E24882550BDD300697F33 /* parking.png in Resources */ = {isa = PBXBuildFile; fileRef = F81E24822550BDD300697F33 /* parking.png */; };
 		F81E24892550BDD300697F33 /* platnosc.png in Resources */ = {isa = PBXBuildFile; fileRef = F81E24832550BDD300697F33 /* platnosc.png */; };
 		F81E248A2550BDD300697F33 /* kartoteka.png in Resources */ = {isa = PBXBuildFile; fileRef = F81E24842550BDD300697F33 /* kartoteka.png */; };
 		F81E248B2550BDD300697F33 /* checkout.png in Resources */ = {isa = PBXBuildFile; fileRef = F81E24852550BDD300697F33 /* checkout.png */; };
 		F81E248C2550BDD300697F33 /* checkin.png in Resources */ = {isa = PBXBuildFile; fileRef = F81E24862550BDD300697F33 /* checkin.png */; };
 		F81E248D2550BDD300697F33 /* status.png in Resources */ = {isa = PBXBuildFile; fileRef = F81E24872550BDD300697F33 /* status.png */; };
+		F891472D25758A4A00440DB6 /* nowarez.png in Resources */ = {isa = PBXBuildFile; fileRef = F891472C25758A4A00440DB6 /* nowarez.png */; };
+		F891473125758E0C00440DB6 /* pokoje.db in Resources */ = {isa = PBXBuildFile; fileRef = F891472E25758E0C00440DB6 /* pokoje.db */; };
+		F891473225758E0C00440DB6 /* goscie.db in Resources */ = {isa = PBXBuildFile; fileRef = F891472F25758E0C00440DB6 /* goscie.db */; };
+		F891473325758E0C00440DB6 /* rezerwacja.db in Resources */ = {isa = PBXBuildFile; fileRef = F891473025758E0C00440DB6 /* rezerwacja.db */; };
+		F89147382575909B00440DB6 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F89147372575909B00440DB6 /* libsqlite3.0.tbd */; };
 		F8B88EB3255069B900D3A178 /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = F8B88EB2255069B900D3A178 /* ResourcePath.mm */; };
 		F8B88EB6255069B900D3A178 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8B88EB5255069B900D3A178 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F81E24822550BDD300697F33 /* parking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = parking.png; path = hotel/logo/parking.png; sourceTree = SOURCE_ROOT; };
 		F81E24832550BDD300697F33 /* platnosc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = platnosc.png; path = hotel/logo/platnosc.png; sourceTree = SOURCE_ROOT; };
 		F81E24842550BDD300697F33 /* kartoteka.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kartoteka.png; path = hotel/logo/kartoteka.png; sourceTree = SOURCE_ROOT; };
 		F81E24852550BDD300697F33 /* checkout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = checkout.png; path = hotel/logo/checkout.png; sourceTree = SOURCE_ROOT; };
 		F81E24862550BDD300697F33 /* checkin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = checkin.png; path = hotel/logo/checkin.png; sourceTree = SOURCE_ROOT; };
 		F81E24872550BDD300697F33 /* status.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = status.png; path = hotel/logo/status.png; sourceTree = SOURCE_ROOT; };
+		F891472C25758A4A00440DB6 /* nowarez.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nowarez.png; path = hotel/logo/nowarez.png; sourceTree = SOURCE_ROOT; };
+		F891472E25758E0C00440DB6 /* pokoje.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = pokoje.db; path = hotel/pokoje.db; sourceTree = SOURCE_ROOT; };
+		F891472F25758E0C00440DB6 /* goscie.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = goscie.db; path = hotel/goscie.db; sourceTree = SOURCE_ROOT; };
+		F891473025758E0C00440DB6 /* rezerwacja.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = rezerwacja.db; path = hotel/rezerwacja.db; sourceTree = SOURCE_ROOT; };
+		F89147352575908F00440DB6 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		F89147372575909B00440DB6 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		F8B88EAD255069B900D3A178 /* hotel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hotel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8B88EB1255069B900D3A178 /* hotel-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "hotel-Info.plist"; path = "../hotel-Info.plist"; sourceTree = "<group>"; };
 		F8B88EB2255069B900D3A178 /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
@@ -36,17 +45,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F89147382575909B00440DB6 /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F89147342575908F00440DB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F89147372575909B00440DB6 /* libsqlite3.0.tbd */,
+				F89147352575908F00440DB6 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F8B88EA3255069B900D3A178 = {
 			isa = PBXGroup;
 			children = (
 				F8B88EAF255069B900D3A178 /* hotel */,
 				F8B88EAE255069B900D3A178 /* Products */,
+				F89147342575908F00440DB6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,10 +101,13 @@
 		F8B88EB7255069B900D3A178 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F891472F25758E0C00440DB6 /* goscie.db */,
+				F891472E25758E0C00440DB6 /* pokoje.db */,
+				F891473025758E0C00440DB6 /* rezerwacja.db */,
+				F891472C25758A4A00440DB6 /* nowarez.png */,
 				F81E24862550BDD300697F33 /* checkin.png */,
 				F81E24852550BDD300697F33 /* checkout.png */,
 				F81E24842550BDD300697F33 /* kartoteka.png */,
-				F81E24822550BDD300697F33 /* parking.png */,
 				F81E24832550BDD300697F33 /* platnosc.png */,
 				F81E24872550BDD300697F33 /* status.png */,
 			);
@@ -149,12 +172,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F81E24882550BDD300697F33 /* parking.png in Resources */,
 				F81E248B2550BDD300697F33 /* checkout.png in Resources */,
 				F81E248C2550BDD300697F33 /* checkin.png in Resources */,
 				F81E24892550BDD300697F33 /* platnosc.png in Resources */,
 				F81E248A2550BDD300697F33 /* kartoteka.png in Resources */,
+				F891473325758E0C00440DB6 /* rezerwacja.db in Resources */,
+				F891472D25758A4A00440DB6 /* nowarez.png in Resources */,
+				F891473125758E0C00440DB6 /* pokoje.db in Resources */,
 				F81E248D2550BDD300697F33 /* status.png in Resources */,
+				F891473225758E0C00440DB6 /* goscie.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

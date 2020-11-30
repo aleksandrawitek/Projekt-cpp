@@ -4,10 +4,18 @@
 #include <SFML/System.hpp>
 #include <SFML/Graphics/Color.hpp>
 #include <iostream>
+#include <stdio.h>
+#include <sqlite3.h> 
 
 
 int main()
 {
+    //wskaźnik na baze danych
+    sqlite3* db;
+    //int test = 0;
+    //test = sqlite3_open("goscie.db", &db);
+    //sqlite3_close(db);
+    
     //pomocnicze zmienne na szerokość i długość ekranu
     float a;
     float b;
@@ -72,13 +80,13 @@ int main()
        
        //ikona nowa rezerwacja
          sf::Texture texture6;
-         if (!texture6.loadFromFile("/Users/aleksandrawitek/Documents/Projekt cpp/Projekt-cpp/hotel/hotel/logo/parking.png")) {
+         if (!texture6.loadFromFile("/Users/aleksandrawitek/Documents/Projekt cpp/Projekt-cpp/hotel/hotel/logo/nowarez.png")) {
            std::cout << "Could not load enemy texture" << std::endl;
            return 0;
          }
-         sf::Sprite parking;
-         parking.setTexture(texture6);
-         parking.setPosition(sf::Vector2f(a*0.7,b*0.5));
+         sf::Sprite nowarez;
+         nowarez.setTexture(texture6);
+         nowarez.setPosition(sf::Vector2f(a*0.7,b*0.5));
       
 
     //program trwa do zamknięcia okna
@@ -101,61 +109,58 @@ int main()
         App.draw(checkin);
         App.draw(checkout);
         App.draw(status);
-        App.draw(parking);
+        App.draw(nowarez);
         App.draw(platnosc);
         App.display();
         
-// buttons
-        if (event.type == sf::Event::MouseButtonPressed)
-        {
-         
-        auto mouse_pos = sf::Mouse::getPosition(App); // Mouse position relative to the window
-        auto translated_pos = App.mapPixelToCoords(mouse_pos); // Mouse position translated into world coordinates
-        if(kartoteka.getGlobalBounds().contains(translated_pos)) // Rectangle-contains-point check
-            // Mouse is inside the sprite.
+
+    //event onclick --> zrobienie przycisków do meldowania etc.
+    if (event.type == sf::Event::MouseButtonPressed)
+    {
+        //pozycja myszki
+        auto mouse_pos = sf::Mouse::getPosition(App);
+        //konwersja pozycji myszki
+        auto translated_pos = App.mapPixelToCoords(mouse_pos);
+        //sprawdzenie czy nasza myszka klika w przycisk kartoteka
+        if(kartoteka.getGlobalBounds().contains(translated_pos))
         {
             kartoteka.setColor(sf::Color::Transparent);
             App.display();
             
         }
-        else if(checkin.getGlobalBounds().contains(translated_pos)) // Rectangle-contains-point check
-            // Mouse is inside the sprite.
+        else if(checkin.getGlobalBounds().contains(translated_pos))
         {
             checkin.setColor(sf::Color::Transparent);
             App.display();
             
         }
-        else if(checkout.getGlobalBounds().contains(translated_pos)) // Rectangle-contains-point check
-                // Mouse is inside the sprite.
+        else if(checkout.getGlobalBounds().contains(translated_pos))
         {
                 checkout.setColor(sf::Color::Transparent);
                 App.display();
                 
         }
-        else if(status.getGlobalBounds().contains(translated_pos)) // Rectangle-contains-point check
-                    // Mouse is inside the sprite.
+        else if(status.getGlobalBounds().contains(translated_pos))
         {
                 status.setColor(sf::Color::Transparent);
                 App.display();
                     
         }
-        else if(parking.getGlobalBounds().contains(translated_pos)) // Rectangle-contains-point check
-                // Mouse is inside the sprite.
+        else if(nowarez.getGlobalBounds().contains(translated_pos))
         {
-                parking.setColor(sf::Color::Transparent);
+                nowarez.setColor(sf::Color::Transparent);
                 App.display();
                 
         }
-            else if(platnosc.getGlobalBounds().contains(translated_pos)) // Rectangle-contains-point check
-                    // Mouse is inside the sprite.
+            else if(platnosc.getGlobalBounds().contains(translated_pos))
             {
                     platnosc.setColor(sf::Color::Transparent);
                     App.display();
-                    
             }
     }
     }
-
+    
+    
 
 
     return 0;
