@@ -55,29 +55,19 @@ Do zrobienia:
 - dodanie eventów onclick
 - połączenie baz danych z przyciskami
 
-III RAPORT (17.11.2020):
-
-Zrobione:
-
-- modyfikacja grafiki (zmiana pól)
-- dodanie eventu onclick (na ten moment przykładowa interakcja)
-- skonfigurowanie XCode pod dodatkowe biblioteki SFML
-
-Do zrobienia: 
-
-- połaczenie projektu z bazą danych
-- zmodyfikowanie baz danych pod nowe przyciski
 
 IV RAPORT (01.12.2020):
 
 Zrobione:
 
+- modyfikacja grafiki (zmiana pól)
+- dodanie eventu onclick
+- skonfigurowanie XCode pod dodatkowe biblioteki SFML
 - https://www.tutorialspoint.com/sqlite/sqlite_c_cpp.htm tutorial
 - skonfigurowanie XCode pod sqlite3
 - optymalizacja kodu - zmniejszenie ilości wierszy
 - dodanie konkretnego eventu po kliknięciu na daną ikonę
 - otwieranie baz danych z poziomu c++
-
 - podjęłam również próbę zrobienia text boxu, natomiast nie udało mi się tego wykonać
 
 Do zrobienia:
