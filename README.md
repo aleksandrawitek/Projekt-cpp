@@ -73,6 +73,7 @@ IV RAPORT (01.12.2020):
 Zrobione:
 
 - https://www.tutorialspoint.com/sqlite/sqlite_c_cpp.htm tutorial
+- skonfigurowanie XCode pod sqlite3
 
 
 
