@@ -5,6 +5,7 @@
 #include <SFML/Graphics/Color.hpp>
 #include <iostream>
 
+
 int main()
 {
     //pomocnicze zmienne na szerokość i długość ekranu
@@ -89,6 +90,7 @@ int main()
             // "close requested" event: we close the window
             if (event.type == sf::Event::Closed)
                 App.close();
+           
         }
         
         //zmiana koloru tła
@@ -102,7 +104,59 @@ int main()
         App.draw(parking);
         App.draw(platnosc);
         App.display();
+        
+// buttons
+        if (event.type == sf::Event::MouseButtonPressed)
+        {
+         
+        auto mouse_pos = sf::Mouse::getPosition(App); // Mouse position relative to the window
+        auto translated_pos = App.mapPixelToCoords(mouse_pos); // Mouse position translated into world coordinates
+        if(kartoteka.getGlobalBounds().contains(translated_pos)) // Rectangle-contains-point check
+            // Mouse is inside the sprite.
+        {
+            kartoteka.setColor(sf::Color::Transparent);
+            App.display();
+            
+        }
+        else if(checkin.getGlobalBounds().contains(translated_pos)) // Rectangle-contains-point check
+            // Mouse is inside the sprite.
+        {
+            checkin.setColor(sf::Color::Transparent);
+            App.display();
+            
+        }
+        else if(checkout.getGlobalBounds().contains(translated_pos)) // Rectangle-contains-point check
+                // Mouse is inside the sprite.
+        {
+                checkout.setColor(sf::Color::Transparent);
+                App.display();
+                
+        }
+        else if(status.getGlobalBounds().contains(translated_pos)) // Rectangle-contains-point check
+                    // Mouse is inside the sprite.
+        {
+                status.setColor(sf::Color::Transparent);
+                App.display();
+                    
+        }
+        else if(parking.getGlobalBounds().contains(translated_pos)) // Rectangle-contains-point check
+                // Mouse is inside the sprite.
+        {
+                parking.setColor(sf::Color::Transparent);
+                App.display();
+                
+        }
+            else if(platnosc.getGlobalBounds().contains(translated_pos)) // Rectangle-contains-point check
+                    // Mouse is inside the sprite.
+            {
+                    platnosc.setColor(sf::Color::Transparent);
+                    App.display();
+                    
+            }
     }
+    }
+
+
 
     return 0;
 }
