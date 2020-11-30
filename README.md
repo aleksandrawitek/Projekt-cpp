@@ -75,6 +75,15 @@ Zrobione:
 - https://www.tutorialspoint.com/sqlite/sqlite_c_cpp.htm tutorial
 - skonfigurowanie XCode pod sqlite3
 - optymalizacja kodu - zmniejszenie ilości wierszy
+- dodanie konkretnego eventu po kliknięciu na daną ikonę
+- otwieranie baz danych z poziomu c++
+
+- podjęłam również próbę zrobienia text boxu, natomiast nie udało mi się tego wykonać
+
+Do zrobienia:
+
+- text box lub znalezienie alternatywy
+- opracowanie wyglądu poszczególnych podstron
 
 
 
