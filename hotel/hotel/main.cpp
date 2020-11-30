@@ -5,16 +5,30 @@
 #include <SFML/Graphics/Color.hpp>
 #include <iostream>
 #include <stdio.h>
-#include <sqlite3.h> 
+#include <sqlite3.h>
+//#include "CheckBox.h"
+//#include "AssetManager.h"
+//#include "SDL_TileSheet.h"
+//#include "UIManager.h"
+//#include "SDL_ScreenHandeler.h"
+
 
 
 int main()
 {
     //wskaźnik na baze danych
     sqlite3* db;
-    //int test = 0;
-    //test = sqlite3_open("goscie.db", &db);
-    //sqlite3_close(db);
+    int goscie = 0;
+    int rezerwacja = 0;
+    int pokoje = 0;
+    
+    //otwarcie kazdej z baz danych
+    goscie = sqlite3_open("goscie.db", &db);
+    rezerwacja = sqlite3_open("rezerwacja.db", &db);
+    pokoje = sqlite3_open("pokoje.db", &db);
+    
+    sf::String playerInput;
+    sf::Text playerText;
     
     //pomocnicze zmienne na szerokość i długość ekranu
     float a;
@@ -122,46 +136,63 @@ int main()
         //konwersja pozycji myszki
         auto translated_pos = App.mapPixelToCoords(mouse_pos);
         //sprawdzenie czy nasza myszka klika w przycisk kartoteka
+        
+        kartoteka.setColor(sf::Color::Transparent);
+        checkin.setColor(sf::Color::Transparent);
+        checkout.setColor(sf::Color::Transparent);
+        status.setColor(sf::Color::Transparent);
+        nowarez.setColor(sf::Color::Transparent);
+        platnosc.setColor(sf::Color::Transparent);
+        App.display();
         if(kartoteka.getGlobalBounds().contains(translated_pos))
         {
-            kartoteka.setColor(sf::Color::Transparent);
+            App.setTitle("Kartoteka");
+            
+            //do pola tekstowego
+            sf::String playerInput;
+            sf::Text playerText;
+            if (event.type == sf::Event::TextEntered)
+            {
+                playerInput +=event.text.unicode;
+                playerText.setString(playerInput);
+            }
+            App.draw(playerText);
             App.display();
             
         }
         else if(checkin.getGlobalBounds().contains(translated_pos))
         {
-            checkin.setColor(sf::Color::Transparent);
+            App.setTitle("Check In");
             App.display();
             
         }
         else if(checkout.getGlobalBounds().contains(translated_pos))
         {
-                checkout.setColor(sf::Color::Transparent);
-                App.display();
+            App.setTitle("Check Out");
+            App.display();
                 
         }
         else if(status.getGlobalBounds().contains(translated_pos))
         {
-                status.setColor(sf::Color::Transparent);
-                App.display();
+            App.setTitle("Status pokoju");
+            App.display();
                     
         }
         else if(nowarez.getGlobalBounds().contains(translated_pos))
         {
-                nowarez.setColor(sf::Color::Transparent);
-                App.display();
-                
+            App.setTitle("Nowa rezerwacja");
+            App.display();
         }
-            else if(platnosc.getGlobalBounds().contains(translated_pos))
-            {
-                    platnosc.setColor(sf::Color::Transparent);
-                    App.display();
-            }
+        else if(platnosc.getGlobalBounds().contains(translated_pos))
+        {
+            App.setTitle("Płatności");
+            App.display();
+        }
     }
     }
     
     
-
+    sqlite3_close(db);
 
     return 0;
 }
