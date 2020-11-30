@@ -69,7 +69,7 @@ int main()
        status.setTexture(texture5);
        status.setPosition(sf::Vector2f(a*0.4,b*0.5));
        
-       //ikona parking
+       //ikona nowa rezerwacja
          sf::Texture texture6;
          if (!texture6.loadFromFile("/Users/aleksandrawitek/Documents/Projekt cpp/Projekt-cpp/hotel/hotel/logo/parking.png")) {
            std::cout << "Could not load enemy texture" << std::endl;
