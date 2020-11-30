@@ -55,6 +55,19 @@ Do zrobienia:
 - dodanie eventów onclick
 - połączenie baz danych z przyciskami
 
+III RAPORT (17.11.2020):
+
+Zrobione:
+
+- modyfikacja grafiki (zmiana pól)
+- dodanie eventu onclick (na ten moment przykładowa interakcja)
+
+Do zrobienia: 
+
+- połaczenie projektu z bazą danych
+- zmodyfikowanie baz danych pod nowe przyciski
+
+
 
 
  
