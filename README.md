@@ -61,6 +61,7 @@ Zrobione:
 
 - modyfikacja grafiki (zmiana pól)
 - dodanie eventu onclick (na ten moment przykładowa interakcja)
+- skonfigurowanie XCode pod dodatkowe biblioteki SFML
 
 Do zrobienia: 
 
