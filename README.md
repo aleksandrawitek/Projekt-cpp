@@ -68,6 +68,11 @@ Do zrobienia:
 - połaczenie projektu z bazą danych
 - zmodyfikowanie baz danych pod nowe przyciski
 
+IV RAPORT (01.12.2020):
+
+Zrobione:
+
+- https://www.tutorialspoint.com/sqlite/sqlite_c_cpp.htm tutorial
 
 
 
