@@ -11,7 +11,7 @@
 //#include "SDL_TileSheet.h"
 //#include "UIManager.h"
 //#include "SDL_ScreenHandeler.h"
-
+#include <TGUI/Font.hpp>
 
 
 int main()
@@ -155,6 +155,7 @@ int main()
             {
                 playerInput +=event.text.unicode;
                 playerText.setString(playerInput);
+                App.setTitle("Check In");
             }
             App.draw(playerText);
             App.display();

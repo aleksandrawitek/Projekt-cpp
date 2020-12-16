@@ -38,6 +38,7 @@
 		F8B88EB2255069B900D3A178 /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
 		F8B88EB4255069B900D3A178 /* ResourcePath.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ResourcePath.hpp; sourceTree = "<group>"; };
 		F8B88EB5255069B900D3A178 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		F8E6DCE525881BCE00A82B19 /* 0.8.8 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = 0.8.8; path = ../../../../../../usr/local/Cellar/tgui/0.8.8; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +56,7 @@
 		F89147342575908F00440DB6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F8E6DCE525881BCE00A82B19 /* 0.8.8 */,
 				F89147372575909B00440DB6 /* libsqlite3.0.tbd */,
 				F89147352575908F00440DB6 /* libsqlite3.tbd */,
 			);
