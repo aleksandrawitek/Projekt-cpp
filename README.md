@@ -75,6 +75,18 @@ Do zrobienia:
 - text box lub znalezienie alternatywy
 - opracowanie wyglądu poszczególnych podstron
 
+V RAPORT (15.12.2020):
+
+Napotkane problemy:
+
+- brak możliwości stworzenia text boxu, kluczowego elementu w aplikacji z poziomu SFML,
+- chęć zaistalowania dodatkowej bibilioteki tgui, natomiast przy kompilacji program nie działał
+
+Zrobione:
+ - instalacja i zapozanie się z QT Creator
+ - przygotowanie takiej samej aplikacji w QT Creator, przenoszenie całości projektu do nowego środowiska
+ 
+
 
 
  
