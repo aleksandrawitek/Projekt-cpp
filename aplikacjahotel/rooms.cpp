@@ -14,6 +14,7 @@ rooms::rooms(QWidget *parent) :
     int width = screenGeometry.width();
     setGeometry(width/6,height/6,width/1.5,height/1.5);
     this->setWindowTitle("Status pokoju");
+    this->setStyleSheet("background-color:white;");
 }
 
 rooms::~rooms()

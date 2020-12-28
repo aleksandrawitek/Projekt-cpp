@@ -14,6 +14,7 @@ payment::payment(QWidget *parent) :
     int width = screenGeometry.width();
     setGeometry(width/6,height/6,width/1.5,height/1.5);
     this->setWindowTitle("Regulacja płatności");
+    this->setStyleSheet("background-color:white;");
 }
 
 payment::~payment()
