@@ -2,6 +2,10 @@
 #define NEWRES_H
 
 #include <QDialog>
+#include <QtSql>
+#include <QtDebug>
+#include <QFileInfo>
+
 
 namespace Ui {
 class newres;
