@@ -86,7 +86,11 @@ Zrobione:
  - instalacja i zapozanie się z QT Creator
  - przygotowanie takiej samej aplikacji w QT Creator, przenoszenie całości projektu do nowego środowiska
  
+VI RAPORT PROTOTYP (12.01.2021):
 
+Zrobione:
+
+- przyciski, otwieranie nowego okna aplikacji 
 
 
  
