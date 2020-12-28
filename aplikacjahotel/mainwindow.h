@@ -21,6 +21,14 @@ private slots:
 
     void on_checkout_button_clicked();
 
+    void on_newres_button_clicked();
+
+    void on_guests_button_clicked();
+
+    void on_rooms_button_clicked();
+
+    void on_payment_button_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

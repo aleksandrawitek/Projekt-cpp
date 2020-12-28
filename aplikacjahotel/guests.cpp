@@ -1,11 +1,12 @@
-#include "checkin.h"
-#include "ui_checkin.h"
+#include "guests.h"
+#include "ui_guests.h"
 #include <QApplication>
 #include <QScreen>
 
-checkin::checkin(QWidget *parent) :
+
+guests::guests(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::checkin)
+    ui(new Ui::guests)
 {
     ui->setupUi(this);
     QScreen *screen = QGuiApplication::primaryScreen();
@@ -13,10 +14,10 @@ checkin::checkin(QWidget *parent) :
     int height =screenGeometry.height();
     int width = screenGeometry.width();
     setGeometry(width/6,height/6,width/1.5,height/1.5);
-    this->setWindowTitle("Check in");
+    this->setWindowTitle("Kartoteka gości");
 }
 
-checkin::~checkin()
+guests::~guests()
 {
     delete ui;
 }

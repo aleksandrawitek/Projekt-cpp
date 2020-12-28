@@ -94,7 +94,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="money_button">
+   <widget class="QPushButton" name="payment_button">
     <property name="geometry">
      <rect>
       <x>990</x>

@@ -1,11 +1,11 @@
-#include "checkin.h"
-#include "ui_checkin.h"
+#include "payment.h"
+#include "ui_payment.h"
 #include <QApplication>
 #include <QScreen>
 
-checkin::checkin(QWidget *parent) :
+payment::payment(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::checkin)
+    ui(new Ui::payment)
 {
     ui->setupUi(this);
     QScreen *screen = QGuiApplication::primaryScreen();
@@ -13,10 +13,10 @@ checkin::checkin(QWidget *parent) :
     int height =screenGeometry.height();
     int width = screenGeometry.width();
     setGeometry(width/6,height/6,width/1.5,height/1.5);
-    this->setWindowTitle("Check in");
+    this->setWindowTitle("Regulacja płatności");
 }
 
-checkin::~checkin()
+payment::~payment()
 {
     delete ui;
 }

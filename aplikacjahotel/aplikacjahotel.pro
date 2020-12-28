@@ -11,18 +11,30 @@ CONFIG += c++11
 SOURCES += \
     checkin.cpp \
     checkout.cpp \
+    guests.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    newres.cpp \
+    payment.cpp \
+    rooms.cpp
 
 HEADERS += \
     checkin.h \
     checkout.h \
-    mainwindow.h
+    guests.h \
+    mainwindow.h \
+    newres.h \
+    payment.h \
+    rooms.h
 
 FORMS += \
     checkin.ui \
     checkout.ui \
-    mainwindow.ui
+    guests.ui \
+    mainwindow.ui \
+    newres.ui \
+    payment.ui \
+    rooms.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
