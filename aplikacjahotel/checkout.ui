@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>925</width>
-    <height>410</height>
+    <height>462</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -48,6 +48,22 @@ border-color: rgb(255, 201, 171);</string>
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 201, 171);
 </string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="zamelduj">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>390</y>
+     <width>721</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(252, 61, 3);</string>
+   </property>
+   <property name="text">
+    <string>WYMELDUJ</string>
    </property>
   </widget>
  </widget>
