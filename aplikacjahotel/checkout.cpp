@@ -22,16 +22,16 @@ checkout::checkout(QWidget *parent) :
     this->setWindowTitle("Check out");
     this->setStyleSheet("background-color:white;");
     QDateTime today = QDateTime::currentDateTime();
-    ui-> date ->setText("<font>" + today.toString("dd-MM-yyyy") + "</font>");
+    ui-> date ->setText("<font>" + today.toString("dd.MM.yyyy") + "</font>");
     //laczenie z baza danych
     QSqlDatabase mydb3 = QSqlDatabase::addDatabase("QSQLITE");
-    mydb3.setDatabaseName("/Users/aleksandrawitek/Documents/Projekt cpp/Projekt-cpp/aplikacjahotel/database/rezerwacja.db");
+    mydb3.setDatabaseName("/Users/aleksandrawitek/Documents/Projekt cpp/Projekt-cpp/aplikacjahotel/database/zameldowani.db");
     mydb3.open();
     QSqlTableModel *model = new QSqlTableModel(this,mydb3);
     model->setTable("zameldowani");
     model->setEditStrategy(QSqlTableModel::OnManualSubmit);
     QString check;
-    check = "wyjazd='"+today.toString("dd-MM-yyyy")+"'" ;
+    check = "wyjazd='"+today.toString("dd.MM.yyyy")+"'" ;
     model->setFilter(check);
     model->select();
     ui->checkouttable->setModel(model);

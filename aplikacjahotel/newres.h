@@ -19,6 +19,9 @@ public:
     explicit newres(QWidget *parent = nullptr);
     ~newres();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::newres *ui;
 };

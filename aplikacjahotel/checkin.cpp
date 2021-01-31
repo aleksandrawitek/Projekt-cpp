@@ -22,7 +22,7 @@ checkin::checkin(QWidget *parent) :
     this->setStyleSheet("background-color:white;");
     //wyswietlanie daty
     QDateTime today = QDateTime::currentDateTime();
-    ui-> date ->setText("<font>" + today.toString("dd-MM-yyyy") + "</font>");
+    ui-> date ->setText("<font>" + today.toString("dd.MM.yyyy") + "</font>");
     //laczenie z baza danych
     QSqlDatabase mydb2 = QSqlDatabase::addDatabase("QSQLITE");
     mydb2.setDatabaseName("/Users/aleksandrawitek/Documents/Projekt cpp/Projekt-cpp/aplikacjahotel/database/rezerwacja.db");
@@ -31,7 +31,7 @@ checkin::checkin(QWidget *parent) :
     model->setTable("rezerwacja");
     model->setEditStrategy(QSqlTableModel::OnManualSubmit);
     QString check;
-    check = "przyjazd='"+today.toString("dd-MM-yyyy")+"'" ;
+    check = "przyjazd='"+today.toString("dd.MM.yyyy")+"'" ;
     model->setFilter(check);
     model->select();
     ui->checkintable->setModel(model);

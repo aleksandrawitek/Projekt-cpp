@@ -55,7 +55,7 @@
     <string>Tytuł</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit">
+  <widget class="QLineEdit" name="tytul">
    <property name="geometry">
     <rect>
      <x>150</x>
@@ -95,7 +95,7 @@
     <string>Imię</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_2">
+  <widget class="QLineEdit" name="imie">
    <property name="geometry">
     <rect>
      <x>150</x>
@@ -134,7 +134,7 @@
     <string>Nazwisko</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_3">
+  <widget class="QLineEdit" name="nazwisko">
    <property name="geometry">
     <rect>
      <x>150</x>
@@ -173,7 +173,7 @@
     <string>Pakiet</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_4">
+  <widget class="QLineEdit" name="pakiet">
    <property name="geometry">
     <rect>
      <x>150</x>
@@ -212,7 +212,7 @@
     <string>Osoby</string>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox">
+  <widget class="QSpinBox" name="osoby">
    <property name="geometry">
     <rect>
      <x>150</x>
@@ -251,7 +251,7 @@
     <string>Dzieci</string>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_2">
+  <widget class="QSpinBox" name="dzieci">
    <property name="geometry">
     <rect>
      <x>150</x>
@@ -290,7 +290,7 @@
     <string>Kwota</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_5">
+  <widget class="QLineEdit" name="kwota">
    <property name="geometry">
     <rect>
      <x>150</x>
@@ -332,7 +332,7 @@
     <string>Przyjazd</string>
    </property>
   </widget>
-  <widget class="QDateEdit" name="dateEdit">
+  <widget class="QDateEdit" name="przyjazd">
    <property name="geometry">
     <rect>
      <x>150</x>
@@ -371,7 +371,7 @@
     <string>Wyjazd</string>
    </property>
   </widget>
-  <widget class="QDateEdit" name="dateEdit_2">
+  <widget class="QDateEdit" name="wyjazd">
    <property name="geometry">
     <rect>
      <x>430</x>

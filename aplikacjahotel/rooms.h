@@ -15,6 +15,9 @@ public:
     explicit rooms(QWidget *parent = nullptr);
     ~rooms();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::rooms *ui;
 };
